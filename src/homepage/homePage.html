@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>page</title>
     <link rel="stylesheet" href="../output.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
 </head>
 <body >
 
@@ -32,7 +31,7 @@
       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
     </svg></button>
               <!-- Dropdown menu -->
-              <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+              <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-400 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                   <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                     <li>
                       <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
@@ -70,7 +69,7 @@
     <!-- carousel -->
     <div id="controls-carousel" class="relative w-full" data-carousel="static">
             <!-- Carousel wrapper -->
-            <div class="relative overflow-hidden h-72 md:min-h-lvh">
+            <div class="relative overflow-hidden h-72 lg:min-h-lvh">
                 <!-- Item 1 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
                     <img src="https://i.pinimg.com/564x/a1/fa/2e/a1fa2edce3a350efb53bb9634917dea9.jpg" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
@@ -104,8 +103,8 @@
     </div>
     
     <!-- btn link group -->   
-    <div class="z-40 relative container mx-auto xl:-mt-24 md:-mt-20 mb-[1000px] bg-violet-600 md:px-20 px-5 flex flex-col md:justify-center md:items-center py-10  md:rounded-3xl overflow-hidden "> 
-        <ul class="grid custom-grid coloms-2 md:grid-cols-6  gap-10   ">
+    <div class="z-40 relative container mx-auto xl:-mt-24 md:-mt-20 mb-[1000px] bg-violet-600  flex flex-col justify-center lg:items-center  py-10  md:rounded-3xl overflow-hidden "> 
+        <ul class="grid xl:grid-cols-[repeat(6,9.375rem)] md:grid-cols-[repeat(3,9.5rem)] px-5 grid-cols-2 gap-10 justify-center md:justify-around ">
             <li class="px-4 pb-4 bg-slate-200 rounded-2xl">
                 <button class="flex flex-col items-center justify-center w-full text-lg font-light text-green-900 ">
                     <img src="../../assets/images/undraw_map_re_60yf.svg" alt="" class="size-24">
@@ -115,7 +114,7 @@
                 </button>
             </li>
 
-            <li class="px-4 pb-4 bg-slate-200 rounded-2xl">
+            <li class="px-4 pb-4 bg-slate-200   rounded-2xl">
                 <button class="flex flex-col items-center justify-center w-full text-lg font-light text-green-900 ">
                     <img src="../../assets/images/undraw_map_re_60yf.svg" alt="" class="size-24">
                     <span class="mt-2">
@@ -124,7 +123,7 @@
                 </button>
             </li>
 
-            <li class="px-4 pb-4 bg-slate-200 rounded-2xl">
+            <li class="px-4 pb-4 bg-slate-200   rounded-2xl">
                 <button class="flex flex-col items-center justify-center w-full text-lg font-light text-green-900 ">
                     <img src="../../assets/images/undraw_map_re_60yf.svg" alt="" class="size-24">
                     <span class="mt-2">
@@ -133,7 +132,7 @@
                 </button>
             </li>
 
-            <li class="px-4 pb-4 bg-slate-200 rounded-2xl">
+            <li class="px-4 pb-4 bg-slate-200   rounded-2xl">
                 <button class="flex flex-col items-center justify-center w-full text-lg font-light text-green-900 ">
                     <img src="../../assets/images/undraw_map_re_60yf.svg" alt="" class="size-24">
                     <span class="mt-2">
@@ -142,7 +141,7 @@
                 </button>
             </li>
 
-            <li class="px-4 pb-4 bg-slate-200 rounded-2xl">
+            <li class="px-4 pb-4 bg-slate-200   rounded-2xl">
                 <button class="flex flex-col items-center justify-center w-full text-lg font-light text-green-900 ">
                     <img src="../../assets/images/undraw_map_re_60yf.svg" alt="" class="size-24">
                     <span class="mt-2">
@@ -151,7 +150,7 @@
                 </button>
             </li>
 
-            <li class="px-4 pb-4 bg-slate-200 rounded-2xl">
+            <li class="px-4 pb-4 bg-slate-200   rounded-2xl">
                 <button class="flex flex-col items-center justify-center w-full text-lg font-light text-green-900 ">
                     <img src="../../assets/images/undraw_map_re_60yf.svg" alt="" class="size-24">
                     <span class="mt-2">
@@ -163,6 +162,7 @@
         </ul>
     </div>
         
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
+
 </body>
 </html>
