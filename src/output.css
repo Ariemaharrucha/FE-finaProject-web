@@ -1158,10 +1158,6 @@ input:checked + .toggle-bg {
   margin-bottom: 0.5rem;
 }
 
-.mb-\[1000px\] {
-  margin-bottom: 1000px;
-}
-
 .ms-2 {
   margin-inline-start: 0.5rem;
 }
@@ -2060,14 +2056,6 @@ input:checked + .toggle-bg {
 
   .md\:w-auto {
     width: auto;
-  }
-
-  .md\:grid-cols-\[repeat\(3\2c 7\.8rem\)\] {
-    grid-template-columns: repeat(3,7.8rem);
-  }
-
-  .md\:grid-cols-\[repeat\(3\2c 8rem\)\] {
-    grid-template-columns: repeat(3,8rem);
   }
 
   .md\:grid-cols-\[repeat\(3\2c 9\.5rem\)\] {
