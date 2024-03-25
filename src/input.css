@@ -3,10 +3,5 @@
 @tailwind utilities;
 
 @layer components {
-    .custom-grid {
-        @apply grid;
-    }
-    .coloms-2 {
-        @apply grid-cols-2;
-    }
+
 }
