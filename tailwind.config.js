@@ -8,7 +8,8 @@ module.exports = {
         'imperial-script': ['Imperial Script', 'serif'],
       },
       colors : {
-        'navbar' : '#31363F',
+        // 'navbar' : '#31363F',
+        'navbar' : '#006600',
         'primary-50': '#66b366',
         'primary-100': '#339933',
         'primary-200': '#008000',
