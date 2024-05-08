@@ -1,5 +1,3 @@
-    window.jsPDF = window.jspdf.jsPDF;
-
 
     document.addEventListener('DOMContentLoaded',function(){
         const inputName = document.getElementById('name');
@@ -11,7 +9,6 @@
         const inputPekerjaan = document.getElementById('pekerjaan');
         const inputAlamat = document.getElementById('alamat');
 
-        const downloadPDF = document.getElementById('downloadPdf');
 
         inputName.addEventListener('input',function(){
             const nameArea = document.getElementById('nameArea');
@@ -54,76 +51,4 @@
             alamatArea.innerText = inputAlamat.value;
         })
 
-        downloadPDF.addEventListener('click',function(){
-
-            const suratElement = document.getElementById('surat');
-
-            const doc = new jsPDF();
-
-            doc.setFontSize(12);
-            doc.text(20,20, "Surat Keterangan Tidak Mampu");
-
-            let startY = 30;
-
-            suratElement.querySelectorAll('p,h1,h5,table').forEach(element => {
-                startY = addElementToPdf(doc,element,startY);
-            })
-
-            doc.save("Surat Keterangan Tidak Mampu");
-
-        })
-
     })
-
-    function addElementToPdf(doc, element, startY) {
-        if(element.tagName.toLowerCase() === 'table') {
-            startY = addTableToPDF(doc,element,startY);
-        } else {
-            // Tangani elemen lainnya seperti paragraf, judul, dan lainnya
-            startY = addNormalElementToPDF(doc, element, startY);
-        }
-        return startY;
-    }
-
-    function addNormalElementToPDF(doc, element, startY) {
-        // Ambil konten teks dari elemen
-        const content = element.innerText.trim();
-        
-        // Cek apakah konten teks tidak kosong
-        if (content !== "") {
-            // Tambahkan konten ke PDF
-            doc.text(20, startY, content);
-            // Hitung tinggi elemen
-            const height = doc.getTextDimensions(content).h / doc.internal.scaleFactor;
-            // Hitung tinggi elemen dan tambahkan margin
-            startY += height + 5;
-        }
-        return startY;
-    }
-
-    function addTableToPDF(doc, table, startY) {
-        // Ambil seluruh baris dalam tabel
-        const rows = table.querySelectorAll('tr');
-        // Iterasi melalui setiap baris tabel
-        rows.forEach(row => {
-            // Ambil seluruh sel dalam baris
-            const cells = row.querySelectorAll('td');
-            let startX = 20;
-            // Iterasi melalui setiap sel dalam baris
-            cells.forEach(cell => {
-                // Ambil konten teks dari sel
-                const content = cell.innerText.trim();
-                // Cek apakah konten teks tidak kosong
-                if (content !== "") {
-                    // Tambahkan konten ke PDF
-                    doc.text(startX, startY, content);
-                    // Hitung lebar sel dan tambahkan margin
-                    startX += cell.offsetWidth / doc.internal.scaleFactor + 5;
-                }
-            });
-            // Reset posisi X dan tinggi baris
-            startX = 20;
-            startY += row.offsetHeight / doc.internal.scaleFactor + 5;
-        });
-        return startY;
-    }
