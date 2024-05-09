@@ -1196,6 +1196,21 @@ input:checked + .toggle-bg{
   margin-bottom: 0.75rem;
 }
 
+.mx-1{
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.mx-16{
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.mx-12{
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
 .mb-1{
   margin-bottom: 0.25rem;
 }
@@ -2808,8 +2823,8 @@ input:checked + .toggle-bg{
     margin-inline-end: 0px;
   }
 
-  .md\:ml-72{
-    margin-left: 18rem;
+  .md\:ml-80{
+    margin-left: 20rem;
   }
 
   .md\:mt-0{
@@ -2824,16 +2839,8 @@ input:checked + .toggle-bg{
     margin-top: 14rem;
   }
 
-  .md\:ml-80{
-    margin-left: 20rem;
-  }
-
   .md\:ml-96{
     margin-left: 24rem;
-  }
-
-  .md\:ml-9{
-    margin-left: 2.25rem;
   }
 
   .md\:block{
@@ -2900,10 +2907,6 @@ input:checked + .toggle-bg{
     width: 11rem;
   }
 
-  .md\:w-80{
-    width: 20rem;
-  }
-
   .md\:w-96{
     width: 24rem;
   }
@@ -2912,37 +2915,16 @@ input:checked + .toggle-bg{
     width: auto;
   }
 
-  .md\:w-8{
-    width: 2rem;
-  }
-
-  .md\:w-9{
-    width: 2.25rem;
-  }
-
-  .md\:w-min{
-    width: -moz-min-content;
-    width: min-content;
-  }
-
-  .md\:min-w-8{
-    min-width: 2rem;
+  .md\:w-3{
+    width: 0.75rem;
   }
 
   .md\:min-w-80{
     min-width: 20rem;
   }
 
-  .md\:min-w-9{
-    min-width: 2.25rem;
-  }
-
   .md\:min-w-96{
     min-width: 24rem;
-  }
-
-  .md\:max-w-\[210mm\]{
-    max-width: 210mm;
   }
 
   .md\:flex-1{
@@ -3107,18 +3089,6 @@ input:checked + .toggle-bg{
   }
 
   .xl\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-}
-
-@media (min-width: 1536px){
-  .\32xl\:text-xl{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .\32xl\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
   }
