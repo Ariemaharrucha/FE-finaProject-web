@@ -1205,11 +1205,6 @@ input:checked + .toggle-bg{
   margin-bottom: 0.75rem;
 }
 
-.mx-8{
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
 .mb-1{
   margin-bottom: 0.25rem;
 }
@@ -2397,6 +2392,11 @@ input:checked + .toggle-bg{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-red-200{
+  --tw-text-opacity: 1;
+  color: rgb(251 213 213 / var(--tw-text-opacity));
+}
+
 .underline{
   text-decoration-line: underline;
 }
@@ -3021,6 +3021,11 @@ input:checked + .toggle-bg{
     padding-right: 1.25rem;
   }
 
+  .md\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .md\:py-16{
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -3039,16 +3044,6 @@ input:checked + .toggle-bg{
   .md\:py-32{
     padding-top: 8rem;
     padding-bottom: 8rem;
-  }
-
-  .md\:px-8{
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  .md\:px-4{
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
 
   .md\:ps-10{
