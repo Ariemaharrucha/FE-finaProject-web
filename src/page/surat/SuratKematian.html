@@ -118,9 +118,12 @@
 
                 <!-- Hari tanggal-->
                 <div class="">
-                    <label for="tempat" class="block mb-2 text-sm font-medium text-gray-900">Hari / <span>
-                            <label for="tanggal">Tanggal meninggal</label></span>
+                    <label for="hari" class="block mb-2 text-sm font-medium text-gray-900">Hari / <span>
+                            <label for="harimeninggal">Tanggal Meninggal</label></span>
                     </label>
+                    <input type="text" id="harimeninggal"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full  focus:ring-primary-100 focus:border-primary-100 p-2.5 mb-5"
+                    required autocomplete="off" />
                     <input type="date" id="tglmeninggal"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full  focus:ring-primary-100 focus:border-primary-100 p-2.5 "
                         required />
@@ -277,7 +280,6 @@
                             <td>:&nbsp;</td>
                             <td class="">
                                 <span id="lahirArea">
-
                                 </span>,
                                 <span id="dateArea">
 
@@ -327,10 +329,15 @@
                     <!-- tanggal -->
                     <table class="bg-white ">
                         <tr class="">
-                            <td class="min-w-60">Hari / Tanggal</td>
-                            <td class="">:&nbsp;</td>
-                            <td id="harimeninggal" class="text-wrap">
-
+                            <td class="whitespace-nowrap">
+                                Hari, Tanggal
+                            </td>
+                            <!--  -->
+                            <td>:&nbsp;</td>
+                            <td>
+                                <span id="harimeninggalArea"> </span>,
+                                <span id="tglmeninggallArea">
+                                </span>
                             </td>
                         </tr>
                         <!-- pukul -->
@@ -338,7 +345,7 @@
                             <td class="whitespace-nowrap">
                                 Pukul
                             </td>
-                            <td>: </td>
+                            <td>:&nbsp;</td>
                             <td id="waktuArea">
                             </td>
                         </tr>

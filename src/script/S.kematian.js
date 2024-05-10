@@ -7,10 +7,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const inputAgama = document.getElementById("agama");
   const inputPekerjaan = document.getElementById("pekerjaan");
   const inputAlamat = document.getElementById("alamat");
-  const inputtglmeninggal = document.getElementById("tglmeninggal");
   const inputwaktumeninggal = document.getElementById("waktumeninggal");
   const inputalamatmeninggal = document.getElementById("alamatmeninggal");
   const inputalasanmeninggal = document.getElementById("alasanmeninggal");
+  const inputtglmeninggal = document.getElementById("tglmeninggal");
+  const inputharimeninggal = document.getElementById("harimeninggal");
+
 
   inputName.addEventListener("input", function () {
     const nameArea = document.getElementById("nameArea");
@@ -54,10 +56,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   //   hari meninggal
-  inputtglmeninggal.addEventListener("input", function () {
-    const inputtglmeninggalArea = document.getElementById("harimeninggal");
-    inputtglmeninggalArea.innerText = inputtglmeninggal.value;
+  inputharimeninggal.addEventListener("input", function () {
+    const inputtglmeninggalArea = document.getElementById("harimeninggalArea");
+    inputtglmeninggalArea.innerText = inputharimeninggal.value;
   });
+
+//   tanggal meningal
+  inputtglmeninggal.addEventListener("blur",function () {
+    const tglMeninggalArea = document.getElementById('tglmeninggallArea');
+    tglMeninggalArea.textContent = inputtglmeninggal.value
+  })
 
   // waktu meninggal
   inputwaktumeninggal.addEventListener("input", function () {
