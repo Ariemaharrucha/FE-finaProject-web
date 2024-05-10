@@ -44,15 +44,15 @@
             <div class="flex items-center gap-3 md:gap-8 ">
                 <img src="../../assets/icons/logoSurat.png" alt="" class="inline-block size-14">
                 <span class="text-base md:text-lg xl:text-2xl font-semibold font-klee-one">Surat Keterangan
-                    Kematian</span>
+                    Pindah</span>
             </div>
 
             <form class="space-y-5  mt-8">
 
-                <!-- nama -->
+                <!-- no.penduduk -->
                 <div class="">
-                    <label for="name" class="block mb-2 text-sm font-medium text-gray-900">Nama</label>
-                    <input type="text" id="name"
+                    <label for="name" class="block mb-2 text-sm font-medium text-gray-900">No.Penduduk</label>
+                    <input type="number" id="noPenduduk"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full  focus:ring-primary-100 focus:border-primary-100 p-2.5 "
                         required autocomplete="off" />
                 </div>
@@ -65,18 +65,78 @@
                         required autocomplete="off" />
                 </div>
 
+                <!-- nama -->
+                <div class="">
+                    <label for="name" class="block mb-2 text-sm font-medium text-gray-900">Nama</label>
+                    <input type="text" id="name"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full  focus:ring-primary-100 focus:border-primary-100 p-2.5 "
+                        required autocomplete="off" />
+                </div>
+
                 <!-- jenis kelamin -->
                 <div class="">
                     <label for="gender" class="block mb-2 text-sm font-medium text-gray-900">Jenis kelamin</label>
                     <select id="gender"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  focus:ring-primary-100 block focus:border-primary-100 w-full p-2.5"
                         required>
-
                         <option disabled selected value> -- Select-- </option>
                         <option>Laki-laki</option>
                         <option>Perempuan</option>
 
                     </select>
+                </div>
+
+                <!-- Alamat -->
+                <div class="">
+                    <label for="alamat" class="block mb-2 text-sm font-medium text-gray-900">Alamat Tinggal</label>
+                    <input type="text" id="alamat"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full  focus:ring-primary-100  focus:border-primary-100 p-2.5 "
+                        required autocomplete="off" />
+                </div>
+
+                <!-- select pendidikan -->
+                <div class="">
+                    <label for="pendidikan" class="block mb-2 text-sm font-medium text-gray-900">Pendidikan</label>
+                    <select id="pendidikan"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  focus:ring-primary-100 block focus:border-primary-100 w-full p-2.5"
+                        required>
+                        <option disabled selected value> -- Select-- </option>
+                        <option>Sd/Sederajat</option>
+                        <option>Sekolah Menengah Pertama (SMP)</option>
+                        <option>Sekolah Menengah Atas (SMA)</option>
+                        <option>Strata 1 (S1)</option>
+                    </select>
+                </div>
+
+
+                <!-- Pekerjaan -->
+                <div class="">
+                    <label for="pekerjaan" class="block mb-2 text-sm font-medium text-gray-900">Pekerjaan</label>
+                    <input type="text" id="pekerjaan"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full  focus:ring-primary-100 focus:border-primary-100 p-2.5 "
+                        required autocomplete="off" />
+                </div>
+
+                <!-- Status -->
+                <div class="">
+                    <label for="status" class="block mb-2 text-sm font-medium text-gray-900">Status</label>
+                    <select id="status"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  focus:ring-primary-100 block focus:border-primary-100 w-full p-2.5"
+                        required>
+
+                        <option disabled selected value> -- Select-- </option>
+                        <option>Menikah</option>
+                        <option>Belum Menikah</option>
+
+                    </select>
+                </div>
+
+                <!-- Warganegara/ Agama -->
+                <div class="">
+                    <label for="agama" class="block mb-2 text-sm font-medium text-gray-900">Agama</label>
+                    <input type="text" id="agama"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full  focus:ring-primary-100 focus:border-primary-100 p-2.5 "
+                        required autocomplete="off" />
                 </div>
 
                 <!-- tempat tanggal lahir -->
@@ -92,79 +152,29 @@
                         required />
                 </div>
 
-                <!-- Warganegara/ Agama -->
+                <!-- Alasan pindah -->
                 <div class="">
-                    <label for="agama" class="block mb-2 text-sm font-medium text-gray-900">Agama</label>
-                    <input type="text" id="agama"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full  focus:ring-primary-100 focus:border-primary-100 p-2.5 "
-                        required autocomplete="off" />
-                </div>
-
-                <!-- Pekerjaan -->
-                <div class="">
-                    <label for="pekerjaan" class="block mb-2 text-sm font-medium text-gray-900">Pekerjaan</label>
-                    <input type="text" id="pekerjaan"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full  focus:ring-primary-100 focus:border-primary-100 p-2.5 "
-                        required autocomplete="off" />
-                </div>
-
-                <!-- Alamat -->
-                <div class="">
-                    <label for="alamat" class="block mb-2 text-sm font-medium text-gray-900">Alamat Tinggal</label>
-                    <input type="text" id="alamat"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full  focus:ring-primary-100  focus:border-primary-100 p-2.5 "
-                        required autocomplete="off" />
-                </div>
-
-                <!-- Hari tanggal-->
-                <div class="">
-                    <label for="hari" class="block mb-2 text-sm font-medium text-gray-900">Hari / <span>
-                            <label for="harimeninggal">Tanggal Meninggal</label></span>
-                    </label>
-                    <input type="text" id="harimeninggal"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full  focus:ring-primary-100 focus:border-primary-100 p-2.5 mb-5"
-                        required autocomplete="off" />
-                    <input type="date" id="tglmeninggal"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full  focus:ring-primary-100 focus:border-primary-100 p-2.5 "
-                        required />
-                </div>
-
-                <!-- pukul -->
-                <div class="">
-                    <label for="time" class="block mb-2 text-sm font-medium text-gray-900">Waktu Meninggal</label>
-                    <input type="time" id="waktumeninggal"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full  focus:ring-primary-100 focus:border-primary-100 p-2.5 "
-                        required autocomplete="off" />
-                </div>
-
-                <!-- tempat meninggal -->
-                <div class="">
-                    <label for="alamat" class="block mb-2 text-sm font-medium text-gray-900">Lokasi meninggal</label>
-                    <input type="text" id="alamatmeninggal"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full  focus:ring-primary-100  focus:border-primary-100 p-2.5 "
-                        required autocomplete="off" />
-                </div>
-
-                <!-- Alasan Kematian -->
-                <div class="">
-                    <label for="alamat" class="block mb-2 text-sm font-medium text-gray-900">Penyebab Kematian</label>
-                    <textarea id="alasanmeninggal"
+                    <label for="alasan" class="block mb-2 text-sm font-medium text-gray-900">Alasan Pindah</label>
+                    <textarea id="alasanpindah"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full focus:ring-primary-100 focus:border-primary-100 p-2.5"
                         required autocomplete="off"></textarea>
                 </div>
 
-
+                <!-- Alamat Tujuan -->
+                <div class="">
+                    <label for="alamatTujuan" class="block mb-2 text-sm font-medium text-gray-900">Alamat Tujuan</label>
+                    <input type="text" id="alamattujuan"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full  focus:ring-primary-100  focus:border-primary-100 p-2.5 "
+                        required autocomplete="off" />
+                </div>
 
                 <div class="md:flex md:gap-5 space-y-4 md:space-y-0 ">
                     <button type="submit"
                         class="text-white  bg-primary-100  focus:ring-2 focus:outline-none focus:ring-primary-100 font-medium rounded-lg text-sm block w-full  md:w-32   px-5 py-2.5 text-center">Submit</button>
 
-
                     <button type="button" id="printPDF"
                         class="text-primary-200 border border-primary-200  focus:ring-2 focus:outline-none ring-primary-100 font-medium rounded-lg block w-full text-sm md:w-32 px-5 py-2.5 text-center">Download</button>
                 </div>
-
-
             </form>
 
         </div>
@@ -192,13 +202,13 @@
             <div class="">
 
                 <header class="text-center mt-3">
-                    <h1 class="font-bold md:text-lg uppercase underline">Surat Keterangan Kematian</h1>
+                    <h1 class="font-bold md:text-lg uppercase underline">Surat Keterangan Pindah</h1>
                     <h5>Nomor : 204/0015/TRI/2021</h5>
                 </header>
                 <!-- default -->
 
                 <div class="text-lg text-wrap mt-8 font-normal">
-                    <p>yang bertanda tangan di bawah ini :</p>
+                    <p>Yang bertanda tangan di bawah ini :</p>
                     <table class="bg-white ">
                         <tr class="">
                             <td class="min-w-60">Nama</td>
@@ -241,14 +251,14 @@
                     </table>
                 </div>
 
-                <!-- isi -->
+                <!-- isi content area -->
                 <div class="text-lg text-wrap mt-8 font-normal ">
                     <p>Menerangkan dengan sebenarnya bahwa :</p>
                     <table class="bg-white ">
                         <tr class="">
-                            <td class="min-w-60">Nama</td>
+                            <td class="min-w-60">No.penduduk</td>
                             <td class="">:&nbsp;</td>
-                            <td id="nameArea" class="text-wrap">
+                            <td id="noPendudukArea" class="text-wrap">
 
                             </td>
                         </tr>
@@ -262,6 +272,17 @@
 
                             </td>
                         </tr>
+                        <!-- nama -->
+                        <tr>
+                            <td class="whitespace-nowrap">
+                                Nama
+                            </td>
+                            <td>:&nbsp;</td>
+                            <td id="nameArea">
+
+                            </td>
+                        </tr>
+
                         <!-- kelamin -->
                         <tr>
                             <td class="whitespace-nowrap">
@@ -272,41 +293,7 @@
 
                             </td>
                         </tr>
-                        <!-- tgl lahir -->
-                        <tr>
-                            <td class="whitespace-nowrap">
-                                Tempat, Tanggal Lahir
-                            </td>
-                            <td>:&nbsp;</td>
-                            <td class="">
-                                <span id="lahirArea">
-                                </span>,
-                                <span id="dateArea">
 
-                                </span>
-
-                            </td>
-                        </tr>
-                        <!-- wni -->
-                        <tr>
-                            <td class="whitespace-nowrap">
-                                Warganegara/ Agama
-                            </td>
-                            <td>:&nbsp;</td>
-                            <td class="">
-                                <span id="negara">Indonesia</span> / <span id="agamaArea"> </span>
-                            </td>
-                        </tr>
-                        <!-- pekerjaan -->
-                        <tr>
-                            <td class="whitespace-nowrap">
-                                Pekerjaan
-                            </td>
-                            <td>:&nbsp;</td>
-                            <td id="pekerjaanArea" class="">
-
-                            </td>
-                        </tr>
                         <!-- alamat -->
                         <tr>
                             <td class="whitespace-nowrap">
@@ -318,60 +305,90 @@
                             </td>
                         </tr>
 
-                    </table>
-
-                    <!-- kematian -->
-
-                    <p class="whitespace-pre-line">
-                        Bahwa nama tersebut di atas telah meninggal dunia pada :
-                    </p>
-
-                    <!-- tanggal -->
-                    <table class="bg-white ">
-                        <tr class="">
+                        <!-- Pendidikan -->
+                        <tr>
                             <td class="whitespace-nowrap">
-                                Hari, Tanggal
+                                Pendidikan
                             </td>
-                            <!--  -->
                             <td>:&nbsp;</td>
-                            <td>
-                                <span id="harimeninggalArea"> </span>,
-                                <span id="tglmeninggallArea">
+                            <td id="riwayatpendidikanArea" class="">
+
+                            </td>
+                        </tr>
+
+                        <!-- pekerjaan -->
+                        <tr>
+                            <td class="whitespace-nowrap">
+                                Pekerjaan
+                            </td>
+                            <td>:&nbsp;</td>
+                            <td id="pekerjaanArea" class="">
+
+                            </td>
+                        </tr>
+
+                        <!-- status -->
+                        <tr>
+                            <td class="whitespace-nowrap">
+                               Status
+                            </td>
+                            <td>:&nbsp;</td>
+                            <td id="statusArea" class="">
+
+                            </td>
+                        </tr>
+
+                          <!-- wni dan agama -->
+                          <tr>
+                            <td class="whitespace-nowrap">
+                                Warganegara/ Agama
+                            </td>
+                            <td>:&nbsp;</td>
+                            <td class="">
+                                <span id="negara">Indonesia</span> / <span id="agamaArea"> </span>
+                            </td>
+                        </tr>
+
+                        <!-- tgl lahir -->
+                        <tr>
+                            <td class="whitespace-nowrap">
+                                Tempat, Tanggal Lahir
+                            </td>
+                            <td>:&nbsp;</td>
+                            <td class="">
+                                <span id="tempatArea">
+                                </span> ,
+                                <span id="dateArea">
+
                                 </span>
+
                             </td>
                         </tr>
-                        <!-- pukul -->
+
+                        <!-- Alasan pindah -->
                         <tr>
                             <td class="whitespace-nowrap">
-                                Pukul
+                                Alasan Pindah
                             </td>
                             <td>:&nbsp;</td>
-                            <td id="waktuArea">
+                            <td class="" id="alasanpindahArea">
                             </td>
                         </tr>
-                        <!-- lokasi meninggal -->
-                        <tr>
+
+                         <!-- lokasi tujuan -->
+                         <tr>
                             <td class="whitespace-nowrap">
-                                Lokasi Meninggal
+                                Alamat Tujuan
                             </td>
                             <td>:&nbsp;</td>
-                            <td id="lokasimeninggalArea" class="">
-                            </td>
-                        </tr>
-                        <!-- penyebab meninggal -->
-                        <tr>
-                            <td class="whitespace-nowrap">
-                                Penyebab Kematian
-                            </td>
-                            <td>:&nbsp;</td>
-                            <td class="" id="penyebabKematianArea">
+                            <td class="" id="alamattujuanArea">
                             </td>
                         </tr>
                     </table>
 
+                    <!-- penutup -->
                     <p class="whitespace-pre-line">
-                        Demikian surat keterangan kematian ini kami buat dengan sebenarnya agar dapat dipergunakan
-                        sebagaimana mestinya.
+                        Demikian surat pengantar pindah ini kami buat  dan diberikan kepada yang bersangkutan agar dapat dipergunakan sebagaimana mestinya.
                     </p>
 
                     <br>
@@ -398,7 +415,7 @@
         </div>
     </div>
 
-    <script src="../../script/S.kematian.js"></script>
+    <script src="../../script/S.Domisili.js"></script>
     <script src="../../../node_modules/flowbite/dist/flowbite.min.js"></script>
 
 
