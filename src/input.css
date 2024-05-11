@@ -4,11 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer components {
   .CardSerbaSerbi{
     @apply md:col-span-3 col-span-6 py-20 md:py-16 bg-cover block text-white bg-no-repeat bg-primary-50 bg-blend-multiply
   }
-
   .ImageBerita{
     @apply absolute md:h-[278px] h-60 w-full -z-10 drop-shadow-lg bg-cover bg-center bg-no-repeat
   }
