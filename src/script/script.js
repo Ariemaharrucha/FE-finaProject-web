@@ -1,3 +1,5 @@
+// console.log('test connect')
+
 window.addEventListener('scroll', function() {
   const header = document.querySelector('.navbar');
   
@@ -24,3 +26,15 @@ window.addEventListener('DOMContentLoaded', function() {
     header.classList.add('bg-transparent');
   }
 });
+
+const formLogin = document.querySelector('.form-login')
+formLogin.addEventListener('submit', function(event){
+  event.preventDefault();
+  const name = document.querySelector('#name').value;
+  const nik = document.querySelector('#nik').value;
+  
+  if(name === 'user' && nik === '12345'){
+    window.open('pemilihan_surat.html');
+  }
+
+})
