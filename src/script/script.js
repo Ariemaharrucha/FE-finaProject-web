@@ -1,4 +1,4 @@
-// console.log('test connect')
+console.log('test connect')
 
 window.addEventListener('scroll', function() {
   const header = document.querySelector('.navbar');
@@ -32,7 +32,5 @@ formLogin.addEventListener('submit', function(event){
   event.preventDefault();
   const name = document.querySelector('#name').value;
   const nik = document.querySelector('#nik').value;
-
-  window.open('pemilihan_surat.html');
-
+  window.location.href = 'pemilihan_surat.html';
 })
