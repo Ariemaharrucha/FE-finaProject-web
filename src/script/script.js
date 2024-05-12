@@ -32,9 +32,7 @@ formLogin.addEventListener('submit', function(event){
   event.preventDefault();
   const name = document.querySelector('#name').value;
   const nik = document.querySelector('#nik').value;
-  
-  if(name === 'user' && nik === '12345'){
-    window.open('pemilihan_surat.html');
-  }
+
+  window.open('pemilihan_surat.html');
 
 })
