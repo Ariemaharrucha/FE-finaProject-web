@@ -1,54 +1,51 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const inputName = document.getElementById("name");
+  const inputNik = document.getElementById("nik");
+  const inputGender = document.getElementById("gender");
+  const inputTempatLahir = document.getElementById("tempat");
+  const inputTanggalLahir = document.getElementById("tanggal");
+  const inputAgama = document.getElementById("agama");
+  const inputPekerjaan = document.getElementById("pekerjaan");
+  const inputAlamat = document.getElementById("alamat");
 
-document.addEventListener('DOMContentLoaded',function(){
-    const inputName = document.getElementById('name');
-    const inputNik = document.getElementById('nik');
-    const inputGender = document.getElementById('gender');
-    const inputTempatLahir = document.getElementById('tempat');
-    const inputTanggalLahir = document.getElementById('tanggal');
-    const inputAgama = document.getElementById('agama');
-    const inputPekerjaan = document.getElementById('pekerjaan');
-    const inputAlamat = document.getElementById('alamat');
+  inputName.addEventListener("input", function () {
+    const nameArea = document.getElementById("nameArea");
+    nameArea.innerText = inputName.value;
+  });
 
+  //hanya nomer
+  inputNik.addEventListener("input", function () {
+    const nikArea = document.getElementById("nikArea");
+    nikArea.innerText = inputNik.value;
+  });
 
-    inputName.addEventListener('input',function(){
-        const nameArea = document.getElementById('nameArea');
-        nameArea.innerText = inputName.value;
-    })
+  inputGender.addEventListener("input", function () {
+    const genderArea = document.getElementById("genderArea");
+    genderArea.innerText = inputGender.value;
+  });
 
-    //hanya nomer
-    inputNik.addEventListener('input',function(){
-        const nikArea = document.getElementById('nikArea');
-        nikArea.innerText = inputNik.value;
-    })
+  inputTempatLahir.addEventListener("input", function () {
+    const lahirArea = document.getElementById("lahirArea");
+    lahirArea.innerText = inputTempatLahir.value;
+  });
 
-    inputGender.addEventListener('input',function () {
-        const genderArea = document.getElementById('genderArea');
-        genderArea.innerText = inputGender.value;
-    })
+  inputTanggalLahir.addEventListener("blur", function () {
+    const dateArea = document.getElementById("dateArea");
+    dateArea.innerText = inputTanggalLahir.value;
+  });
 
-    inputTempatLahir.addEventListener('input',function(){
-        const lahirArea = document.getElementById('lahirArea');
-        lahirArea.innerText = inputTempatLahir.value;
-    })
+  inputAgama.addEventListener("input", function () {
+    const agamaArea = document.getElementById("agamaArea");
+    agamaArea.innerText = inputAgama.value;
+  });
 
-    inputTanggalLahir.addEventListener('blur',function(){
-        const dateArea = document.getElementById('dateArea');
-        dateArea.innerText = inputTanggalLahir.value;
-    })
+  inputPekerjaan.addEventListener("input", function () {
+    const pekerjaanArea = document.getElementById("pekerjaanArea");
+    pekerjaanArea.innerText = inputPekerjaan.value;
+  });
 
-    inputAgama.addEventListener('input',function(){
-        const agamaArea = document.getElementById('agamaArea');
-        agamaArea.innerText = inputAgama.value;
-    })
-
-    inputPekerjaan.addEventListener('input',function(){
-        const pekerjaanArea = document.getElementById('pekerjaanArea');
-        pekerjaanArea.innerText = inputPekerjaan.value;
-    })
-
-    inputAlamat.addEventListener('input',function(){
-        const alamatArea = document.getElementById('alamatArea');
-        alamatArea.innerText = inputAlamat.value;
-    })
-
-})
+  inputAlamat.addEventListener("input", function () {
+    const alamatArea = document.getElementById("alamatArea");
+    alamatArea.innerText = inputAlamat.value;
+  });
+});
