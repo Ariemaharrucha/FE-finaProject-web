@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Klee+One:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Imperial+Script&family=Klee+One:wght@400;600&display=swap");
 
 /*
 ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
@@ -1430,10 +1430,6 @@ input:checked + .toggle-bg{
   height: 0.625rem;
 }
 
-.h-20{
-  height: 5rem;
-}
-
 .h-24{
   height: 6rem;
 }
@@ -2057,20 +2053,36 @@ input:checked + .toggle-bg{
   background-color: rgb(255 255 255 / 0.5);
 }
 
-.bg-\[url\(\'\.\.\/src\/assets\/images\/berita_terkini\.png\'\)\]{
-  background-image: url('../src/assets/images/berita_terkini.png');
+.bg-\[url\(\'\.\.\/src\/assets\/images\/bansos\.jpg\'\)\]{
+  background-image: url('../src/assets/images/bansos.jpg');
 }
 
 .bg-\[url\(\'\.\.\/src\/assets\/images\/footer\.png\'\)\]{
   background-image: url('../src/assets/images/footer.png');
 }
 
+.bg-\[url\(\'\.\.\/src\/assets\/images\/gedung_serbaguna\.jpg\'\)\]{
+  background-image: url('../src/assets/images/gedung_serbaguna.jpg');
+}
+
 .bg-\[url\(\'\.\.\/src\/assets\/images\/hero\.png\'\)\]{
   background-image: url('../src/assets/images/hero.png');
 }
 
+.bg-\[url\(\'\.\.\/src\/assets\/images\/kerja_bakti\.jpg\'\)\]{
+  background-image: url('../src/assets/images/kerja_bakti.jpg');
+}
+
+.bg-\[url\(\'\.\.\/src\/assets\/images\/kerja_bakti_masjid\.jpg\'\)\]{
+  background-image: url('../src/assets/images/kerja_bakti_masjid.jpg');
+}
+
 .bg-\[url\(\'\.\.\/src\/assets\/images\/misi_desa\.png\'\)\]{
   background-image: url('../src/assets/images/misi_desa.png');
+}
+
+.bg-\[url\(\'\.\.\/src\/assets\/images\/santunan\.jpg\'\)\]{
+  background-image: url('../src/assets/images/santunan.jpg');
 }
 
 .bg-\[url\(\'\.\.\/src\/assets\/images\/sejarah_desa\.png\'\)\]{
@@ -2079,6 +2091,10 @@ input:checked + .toggle-bg{
 
 .bg-\[url\(\'\.\.\/src\/assets\/images\/tentang_kami\.png\'\)\]{
   background-image: url('../src/assets/images/tentang_kami.png');
+}
+
+.bg-\[url\(\'\.\.\/src\/assets\/images\/turnament_voly\.jpg\'\)\]{
+  background-image: url('../src/assets/images/turnament_voly.jpg');
 }
 
 .bg-\[url\(\'\.\.\/src\/assets\/images\/visi_desa\.png\'\)\]{
@@ -2950,10 +2966,6 @@ input:checked + .toggle-bg{
 
   .md\:h-16{
     height: 4rem;
-  }
-
-  .md\:h-20{
-    height: 5rem;
   }
 
   .md\:w-1\/2{
